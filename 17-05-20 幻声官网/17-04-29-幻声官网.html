@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>幻声官网</title>
+<style type="text/css">
+
+*{
+	padding:0; margin:0}
+	
+#ad-L{ width:200Ppx; height:200px; border:2px solid #0F0;background:rgba(102,102,102,1);
+ 		position:fixed; z-index:4; animation: rotate 5s ease infinite; margin-top:50px;animation-fill-mode: forwards;}
+	@keyframes rotate{
+	from{ width:200px; height:200px}
+	to{width:100px; height:100px}
+	}
+#ad-L img{animation: rotate 5s ease infinite ;animation-fill-mode: forwards;}
+
+#ad-r{ width:40px; position:fixed; margin-left:97%; z-index:4; margin-top:55px}
+#ad-r-1{ height:35px; background:rgba(51,51,51,0.8);position:relative; z-index:5}
+#ad-r-1-1{ display:none; width:120px; overflow:hidden;
+ height:35px; margin-right:38px; line-height:35px; text-align:center; position:absolute; right:0px; top:0px; background:rgba(255,0,0,1); z-index:4; animation:move1 ease 1s}
+@keyframes move1{
+	from{ width:0px}
+	to{ width:120px}
+	}
+#ad-r-1:hover{ background:rgba(255,0,0,1); cursor:pointer}
+#ad-r-1:hover #ad-r-1-1{ display:block; z-index:3} 
+#ad-r-1 img{ width:35px; height:35px;}
+#ad-r-2{ margin-top:20px; height:35px;background:rgba(51,51,51,0.8)}
+#ad-r-2:hover{ background:rgba(255,0,0,1)}
+#ad-r-3{ margin-top:20px; height:35px;background:rgba(51,51,51,0.8)}
+#ad-r-3:hover{ background:rgba(255,0,0,1)}
+#ad-r-4{ margin-top:20px; height:35px;background:rgba(51,51,51,0.8)}
+#ad-r-4:hover{ background:rgba(255,0,0,1)}
+
+#ad-L img {width:100Ppx; height:200px; }
+a{ text-decoration:none; color:#000; cursor:pointer}
+a:hover{ color:#0F0}
+#header{
+	 height:50px; background-color:#333; padding-left:50px;  background-attachment:fixed }
+#gedan-1{ color:#0FF}
+	
+#header-left,#header-left-more,#header-left-song{
+	color:#FFF; font-size:20px; margin-left:50px; line-height:25px; padding-top:10px; float:left}
+#dwn{ width:60px; height:20px; position:absolute;z-index:3; display:none}
+#dwn li{ background-color:#CFC;text-align:center;display:block; color:#000; width:110px;}
+#dwn-img{width:10px; height:10px;display:block;margin-top:-18px; margin-left:110px;}
+#header-left:hover img{ transform:rotate(180deg)}
+
+#header-left{ position:relative}
+#header-left:hover #dwn{display:block }
+#more-img{width:10px; height:10px; transform:rotate(-90deg); margin-top:-18px; margin-left:45px; display:block}
+#header-left-more:hover img{ transform:none}
+#dwn li:nth-child(1){ padding-top:3px;border-radius:5px; opacity:0.8; margin-bottom:1.5px;}
+#dwn li:nth-child(1):hover{border-bottom:1px solid #FFF;background-color:#CCC; border-radius:10px; 
+							transform:rotatex(360deg); transition-duration:3s; opacity:1}
+#dwn li:nth-child(2){ padding-top:5px;border-radius:5px; opacity:0.8; margin-bottom:1.5px}
+#dwn li:nth-child(2):hover{border-bottom:1px solid #FFF;background-color:#CCC;border-radius:10px;
+							transform:rotatey(-360deg); transition-duration:3s; opacity:1}
+#dwn li:nth-child(3){ padding-top:5px;border-radius:5px; opacity:0.8}
+#dwn li:nth-child(3):hover{border-bottom:1px solid #FFF;background-color:#CCC; border-radius:10px;
+							transform:rotatez(360deg); transition-duration:3s; opacity:1}
+#dwn li:nth-child(1){ margin-top:12px}
+#header-left-dwn:hover #dwn-bg{ display:block}
+#dwn-bg{ z-index:1; width:120px; height:100px; position:absolute; margin-top:5px; display:none; }
+#header-left:hover #dwn-bg{ display:block}
+
+
+#header-left-more{ position:relative} 
+#a-left,#a-left-moer{
+	color:#FFF; text-decoration:none}
+#div ,input{
+	margin-top:13px; margin-left:25px}
+#a-left:hover{
+	text-decoration:underline}
+li{
+	list-style:none}
+#more{
+	width:80px; position:absolute; z-index:4; display:none;
+	margin-top:20px; text-align:center; margin-left:-10px;}
+#more li{ background-color:#FF6; margin-bottom:2px; border-radius:5px}
+#more li:nth-child(1):hover { transform:rotatex(360deg); transition-duration:3s}
+#more li:nth-child(2):hover { transform:rotatey(360deg); transition-duration:3s}
+#more li:nth-child(3):hover { transform:rotatey(-360deg); transition-duration:3s}
+#more li:nth-child(4):hover { transform:rotatez(360deg); transition-duration:3s}
+#more li:nth-child(5):hover { transform: scale(1.2); transition-duration:3s;margin-top:3px}
+#more-bg{ height:150px;width:80px; position:absolute; top:35px; left:-10px; display:none; opacity:0;  z-index:3; background:#999}
+#header-left-more:hover #more-bg{ display:block}
+#header-left-more:hover #more{display:block}	
+#more-img{ width:10px; height:10px; display:block;transform:rotate(-90deg);}
+#header-left-more:hover img{ transform:none}
+#gedan{
+	padding-left:40px}
+	
+#gedan-2{ padding-right:50px}
+#span1{ padding-left:140px; color:#F00; font-weight:600}	
+
+#US-song{ padding-left:755px; padding-top:8px}
+#song-list{ display:block; height:200px; width:200px; float:left; margin-left:50px; margin-top:10px}
+.list{ margin:0 auto }
+#song{ height:60px; background-color:#CFC; line-height:60px; padding-left:85px; font-size:24px; }
+#song2{ float:left; background-color:#CFC; height:60px; line-height:60px; padding-left:85px; font-size:24px; padding-right:122px}
+#song3{ padding-top:50px; padding-left:540px;}
+#song3-cp{ padding-right:450px; padding-left:40px}        			<!--复制的歌单图片-->
+#chine{ color:#0000FF; font-size:20px;}
+#song2-list{ font-size:16px}
+
+marque{ z-index:1}
+#geshou{ width:40px; height:40px; position:absolute; z-index:3; margin-top:10px; display:none}
+#geshou li{ background-color:#FF6; margin-bottom:2px; width:50px; border-radius:5px}
+#geshou li:nth-child(1):hover { transform:rotatex(360deg); transition-duration:3s}
+#geshou li:nth-child(2):hover { transform:rotatey(360deg); transition-duration:3s}
+#geshou li:nth-child(3):hover { transform:rotatez(360deg); transition-duration:3s}
+#geshou li:nth-child(4):hover { transform: scale(1.2); transition-duration:3s}
+#geshou-more{ width:50px; height:120px; margin-top:-1px; position:absolute;opacity:0; display:none; z-index:2}
+#header-left-song:hover #geshou-more{ display:block}
+#header-left-song:hover #geshou{ display:block}
+#more-img{width:10px; height:10px; transform:rotate(-90deg); margin-top:-18px; margin-left:45px; display:block}
+
+
+#time{ float:right}
+</style>
+
+<script type="text/javascript">
+window.onload=function(){
+	var Otxt=document.getElementById('sousuo');
+	var Obtn=document.getElementById('sousuo-btn');
+	var txt=document.getElementById("sousuo").value
+
+	Obtn.onclick=function(){
+		if(Otxt.value==''){
+			alert("请输入搜索内容！！！");
+			}else{
+			alert("确定搜索"+txt)	
+			}
+		}
+	
+	}
+
+
+</script>
+</head>
+
+<body>
+<!--边框广告区开始-->
+<div id="ad-L"><a href="17-05-28播放界面2.html"><img src="image/邓紫棋/1.jpg" /></a>
+</div>
+<div id="ad-r">
+
+<div id="ad-r-1">
+<img src="image/音乐/a2ae411d01ff2a79472737ad62be1563.png" />
+<div id="ad-r-1-1">我的音乐购物车</div>
+</div>
+
+<div id="ad-r-2"></div>
+<div id="ad-r-3"></div>
+<div id="ad-r-4"></div>
+<div id="ad-r-5"></div>
+</div>
+
+<!--边框广告区结束-->
+
+<!--导航部分开始-->
+
+<div id="header">
+<div id="header-left"><strong><a id="a-left" href="#">幻声音乐网</a></strong></div>
+<div id="header-left"><strong><a id="a-left" href="#"><font color="#FFFF00">首页</font></a></strong></div>
+<div id="header-left"><strong><a id="a-left" href="17-05-23(榜单）.html">榜单</a></strong></div>
+<div id="header-left-song"><strong><a id="a-left" href="歌手.html">歌手</a></strong>
+<ul id="geshou">
+<li><a href="#">欧美</a></li>
+<li><a href="#">欧美</a></li>
+<li><a href="#">欧美</a></li>
+<li><a href="#">欧美</a></li>
+</ul>
+<div id="geshou-more"></div>
+</div>
+<div id="header-left"><strong><a id="a-left" href="#">专辑</a></strong></div>
+<div id="header-left"><strong><a id="a-left" href="#">淘歌</a></strong></div>
+<div id="header-left"><strong><a id="a-left" href="#">主播</a></strong></div>
+<div id="header-left-more"><strong><a id="a-left-moer" href="#">更多</a></strong>
+<img id="more-img" src="image/jt.png" /></a>
+<ul id="more">
+<li><a href="#">歌单</a></li>
+<li><a href="歌手.html">歌手</a></li>
+<li><a href="#">MV</a></li>
+<li><a href="#">轻音乐</a></li>
+<li><a href="#">电台</a></li>
+</ul>
+
+<div id="more-bg"></div>
+</div>
+<div id="header-left"><strong><a id="a-left" href="#">        </a></strong></div>				<!--空格-->
+<div id="header-left"><strong><a id="a-left" href="#">下载客户端</a></strong><img id="dwn-img" src="image/jt.png" />
+<ul id="dwn">
+<li><a href="#">MAC版</a></li>
+<li><a href="#">Iphone版</a></li>
+<li><a href="#">Windows版</a></li>
+</ul>
+<div id="dwn-bg"></div>
+
+</div>
+<input type="text" placeholder="优质音乐搜索"  id="sousuo" />
+<input id="sousuo-btn" type="button" value="搜索" />
+</div>
+
+<!--导航部分结束-->
+
+<!--歌单开始-->
+
+<marquee scrollamount="18" height="300px;" loop="-1" onmouseout="this.start()" onmouseover="this.stop()">
+<img id="img1" src="image/1 (2).jpg" width="50%" height="300" />
+<img id="img1" src="image/3 (2).jpg" width="50%" height="300"/>
+</marquee>
+
+
+
+<div id="songs" class="list">
+<div id="song"><b><span id="gedan-1">歌单</span></b></div>
+<div id="gedan">
+<ul>
+<li><img id="song-list" src="image/1.jpg" /></li>
+<li><img id="song-list" src="image/2.jpg" /></li>
+<li><img id="song-list" src="image/3.jpg" /></li>
+<li><img id="song-list" src="image/4.jpg" /></li>
+<li><img id="song-list" src="image/5.jpg" /></li>
+<li><img id="song-list" src="image/1.jpg" /></li>
+<li><img id="song-list" src="image/2.jpg" /></li>
+<li><img id="song-list" src="image/3.jpg" /></li>
+<li><img id="song-list" src="image/4.jpg" /></li>
+<li><img id="song-list" src="image/5.jpg" /></li>
+</ul></div></div>
+
+<!--歌单结束-->
+
+<div id="song2">
+<a id="new"><b>新歌首发 </b> </a>
+<a id="chine"> &nbsp华语</a><font size="+1.5">| <a id="US">欧美</a>  | <a id="HG">韩国</a>  | <a id="RB">日本</a>  |</font><span id="span1">热门歌手</span>
+<ul>
+<li id="song2-list"><a href="#">GARNiDELiA - 桃源恋歌</a>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>17-05-20</b></li>
+<li id="song2-list"><a href="#">By2 - 幸福不远了【追婚记片头曲】</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>17-05-20</b></li>
+<li id="song2-list"><a href="#">李宇春 - 我的心里只有你没有他 </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>17-05-20</b></li>
+<li id="song2-list"><a href="#">于朦胧 - 一半【轩辕剑之汉之云插曲】</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>17-05-20</b></li>
+<li id="song2-list"><a href="#">毛泽少 - 一剪梅·舟过吴江【龙珠传奇插曲】</a>&nbsp&nbsp&nbsp    <b>17-05-20</b></li>
+<li id="song2-list"><a href="#">毛泽少 - 一剪梅·舟过吴江【龙珠传奇插曲】</a>&nbsp&nbsp&nbsp    <b>17-05-20</b></li>
+<li id="song2-list"><a href="#">李宇春 - 我的心里只有你没有他 </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>17-05-20</b></li>
+</ul>
+<ul id="US-song">
+<li id="song2-list"><a href="#">GARNiDELiA - 桃源恋歌</a> <span id="time"> <b>17-05-20</b></span></li>
+<li id="song2-list"><a href="#">By2 - 幸福不远了【追婚记片头曲】</a><span id="time"> <b>17-05-20</b></span></li>
+<li id="song2-list"><a href="#">李宇春 - 我的心里只有你没有他 </a> <span id="time"> <b>17-05-20</b></span></li>
+<li id="song2-list"><a href="#">于朦胧 - 一半【轩辕剑之汉之云插曲】</a><span id="time">  <b>17-05-20</b></span></li>
+<li id="song2-list"><a href="#">毛泽少 - 一剪梅·舟过吴江</a><span id="time"><b>17-05-20</b></span></li>
+<li id="song2-list"><a href="#">李宇春 - 我的心里只有你没有他 </a> <span id="time">  <b>17-05-20</b></span></li>
+<li id="song2-list"><a href="#">于朦胧 - 一半【轩辕剑之汉之云插曲】</a> <span id="time"> <b>17-05-20</b></span></li>
+</ul>
+
+</div>
+<div >
+<ul id="song3">
+<li><img id="song-list" src="image/6.jpg" /></li>
+<li><img id="song-list" src="image/7.jpg" /></li>
+<li><img id="song-list" src="image/8.jpg" /></li>
+<li><img id="song-list" src="image/9.jpg" /></li>
+<li><img id="song-list" src="image/10.jpg" /></li>
+<li><img id="song-list" src="image/2.jpg" /></li>
+
+</ul></div>
+<div >
+<ul id="song3-cp">
+<li><img id="song-list" src="image/6.jpg" /></li>
+<li><img id="song-list" src="image/7.jpg" /></li>
+<li><img id="song-list" src="image/8.jpg" /></li>
+<li><img id="song-list" src="image/9.jpg" /></li>
+<li><img id="song-list" src="image/10.jpg" /></li>
+<li><img id="song-list" src="image/2.jpg" /></li>
+
+</ul></div>
+
+<div id="foot">  
+
+</div>
+</body>
+</html>

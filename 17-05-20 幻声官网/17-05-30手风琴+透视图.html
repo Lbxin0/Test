@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>手风琴+透视图</title>
+<style>
+*{ padding:0; margin:0}
+#div-1{ width:300px; height:400px; border:2px solid #0F0; margin:100px auto; perspective:500px; position:relative}
+#img-2{ width:300px; height:400px; padding:0}
+#div-1:hover{ background-image:linear-gradient( to left, #FF9, #CF9, #9FC); opacity:0.8}
+#div-1:hover ul li{ display:block}
+#div-1:hover img{ transform:rotateX(85deg); transform-origin:bottom}
+#span-1{ position:absolute; top:0px; left:0px}
+a:hover{ color:#F00}
+#US-song li{ list-style:none; padding-top:20px; padding-left:30px; display:none}
+
+#ul-2{ width:600px; height:300px; border:1px solid #f00; margin:100px auto; overflow:hidden; background-color:#333}
+#ul-2:hover li{ width:70px;}
+#ul-2 li:hover{ width:280px}
+#ul-2 li{ width:120px;  float:left; list-style:none; transition-duration:2s}
+#ul-2 li img{ height:300px}
+#ul-2 li:hover img{ opacity:1}
+</style>
+</head>
+
+<body>
+<div id="div-1">
+<img id="img-2" src="image/g4.jpg" />
+<span id="span-1">
+<ul id="US-song">
+<li id="song2-list"><a href="#">M.B.华晨宇 -国王与乞丐</a></li>
+<li id="song2-list"><a href="#">M.B.华晨宇 -消失的昨天</a></li>
+<li id="song2-list"><a href="#">M.B.华晨宇 -Here We Are</a></li>
+<li id="song2-list"><a href="#">M.B.华晨宇 -For Forever</a></li>
+<li id="song2-list"><a href="#">M.B.华晨宇 -烟火里的尘埃</a></li>
+<li id="song2-list"><a href="#">M.B.华晨宇 -我的滑板鞋2016</a></li>
+<li id="song2-list"><a href="#">M.B.华晨宇 -我离孤单几公里</a></li>
+</ul></span>
+</div>
+
+<ul id="ul-2">
+<li><img src="image/邓紫棋/1.jpg" /></li>
+<li><img src="image/邓紫棋/2.jpg" /></li>
+<li><img src="image/邓紫棋/3.jpg" /></li>
+<li><img src="image/邓紫棋/4.jpg" /></li>
+<li><img src="image/邓紫棋/g3 - 副本.jpg" /></li>
+</ul>
+
+</body>
+</html>

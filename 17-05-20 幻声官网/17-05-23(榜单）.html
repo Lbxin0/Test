@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+window.onload=function(){
+	var Obtn=document.getElementById('btn');
+	var Otxt=document.getElementById('txt');
+	Obtn.onclick=function(){
+		if( Otxt.value==''){
+			alert("请输入搜索内容！！！！")
+			}else{
+				alert("确认搜索？？？？")}
+		}
+		
+	}
+
+
+</script>
+<style>
+*{
+	padding:0; margin:0}
+a{ text-decoration:none; color:#999}
+a:hover{ color:#F00}
+#span1{ text-decoration:underline}
+body{ overflow:hidden}
+#header{
+	 height:50px; background: linear-gradient( to left, #FF9, #CF9, #9FC);  padding-left:50px}
+	
+#header-left,#header-left-more,#header-left-down{
+	color:#FFF; font-size:20px; margin-left:50px; line-height:25px; padding-top:10px; float:left; position:relative}
+#txt{ margin-top:13px; margin-left:13px;position:absolute; right:50px}
+#btn{position:absolute; top:12.6px; right:20px}
+
+img{
+	width:300px; height:500px}
+ul li{ list-style:none}
+#ul-1 li{ position:relative}
+#ul-1 li:nth-child(1){ position:absolute; left:20px}
+#ul-1 li:nth-child(2){ position:absolute; left:160px}
+#ul-1 li:nth-child(3){ position:absolute; left:250px}
+#ul-1 li:nth-child(4){ position:absolute; left:340px}
+#ul-1 li:nth-child(5){ position:absolute; left:420px}
+#ul-1 li:nth-child(6){ position:absolute; left:510px}
+#ul-1 li:nth-child(7){ position:absolute; left:600px}
+#ul-1 li:nth-child(8){ position:absolute; left:690px}
+#ul-1 li:nth-child(10){ position:absolute; left:870px}
+#header-left-down{ padding-bottom:20px}
+#ul-3{ position:relative; display:none}
+#header-left-down:hover #ul-3 li{ display:block}
+#header-left-down:hover #ul-3{ display:block}
+#ul-3 li{ color:#000; width:100px; display:inline ; background-color:#CFF; text-align:center }
+#ul-3 li:nth-child(1){ position:absolute; top:20px; left:9px; padding-top:2px}
+#ul-3 li:nth-child(2){ position:absolute; top:40px; left:10px; margin-top:10px}
+#ul-3 li:nth-child(3){ position:absolute; top:60px; left:10px; margin-top:20px}
+#ul-3 li:nth-child(4){ position:absolute; top:80px; left:10px; margin-top:30px}
+
+#div2{ width:80px; height:80px; background:#3FC; margin:100px auto; border:2px solid #F0f}
+</style>
+
+</head>
+
+<body>
+<div id="header">
+<ul id="ul-1">
+<li id="header-left"><strong><a id="a-left" href="#"><span id="span1">幻声音乐网</span></a></strong></li>
+<li id="header-left"><strong><a id="a-left" href="17-04-29-ws.html">首页</a></strong></li>
+<li id="header-left"><strong><a id="a-left" href="#"><font color="#FFFF00">榜单</font></a></strong></li>
+<li id="header-left"><strong><a id="a-left" href="歌手.html">歌手</a></strong></li>
+<li id="header-left"><strong><a id="a-left" href="#">专辑</a></strong></li>
+<li id="header-left"><strong><a id="a-left" href="#">淘歌</a></strong></li>
+<li id="header-left"><strong><a id="a-left" href="#">主播</a></strong></li>
+<li id="header-left-more"><strong><a id="a-left-moer" href="#">更多</a></strong></li>
+<li id="header-left"><strong><a id="a-left" href="#">        </a></strong></li>				
+<li id="header-left-down"><strong><a id="a-left" href="#">下载客户端</a></strong>
+<ul id="ul-3">
+<li><a  href="#">MAC版</a></li>
+<li><a  href="#" >移动版</a></li>
+<li><a  href="#" >Iphone版</a></li>
+<li><a  href="#" >WINDOWS版</a></li>
+</ul>
+</li>
+<input type="text" placeholder="优质音乐搜索"  id="txt" />
+<input id="btn" type="button" value="搜索" />
+
+</ul>
+</div>
+
+
+<div id="div2"></div>
+</body>
+</html>
