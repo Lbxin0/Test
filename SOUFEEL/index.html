@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://static.soufeel.com/skin/frontend/smartwave/default/favicon.ico" type="image/x-icon">
+    <title>SOUFEEL - Feel the Love</title>
+    <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+    <link rel="stylesheet" href="path/to/swiper/dist/css/swiper.css"/>
+    <script type="text/javascript" src="path/to/swiper.js"></script>
+    <script type="text/javascript" src="path/to/dist/vue-awesome-swiper.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" type="text/css" media="" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:1336px) and (min-width:1024px)" href="./css/common2.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:991px)" href="./css/desktop.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:1024px) and (min-width:768px)" href="./css/common3.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:767px)" href="./css/min768.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:375px)" href="./css/min375.css" />
+    <style>
+    @media screen and (min-width: 1080px) {
+    .hd-nav .hd-nav-hd .hd-nav-hd-left{
+        margin-left:-10px
+    }
+   
+}
+    </style>
+     
+    <style>
+     @media (min-width: 310px) and (max-width: 374px) {
+    .hd-nav .hd-nav-content ul li h4{
+        margin:8px 0;
+    }
+    .hd-nav .hd-nav-content ul{
+        width:180px
+    }
+}
+    </style>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div id="containers" class="box" v-cloak>
+        <div class="header">
+            <a href="https://www.soufeel.com/summer-sale"><div class="hd-img overflowhd"></div></a>
+            <div class="hd-nav">
+                <div class="hd-nav-hd padding8 inlineblocks">
+                    <div class="hd-nav-hd-left">
+                        <img src="./img/0602/USD.png">
+                        <span>USD</span>
+                        <div class="inlineblocks HdAds">
+                            <ul id="Adsst">
+                                <li  v-for="list in HdList">
+                                    {{list.title}} <span>{{list.price}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary btnsize"><img @click="add" src="./img/0602/Fabulous.png"> &nbsp;&nbsp;like&nbsp;{{likes}}</button>
+                            <div class="searchdv">
+                                <input id="txt-search" type="text" class="txt-search" placeholder="SEARCH HERE...">
+                                <label class="txt-search-img" ><img src="./img/0602/search.png"></label>
+                            </div>
+                            
+                    
+                        </div>
+                    <div class="hd-nav-hd-right inlineblocks" >
+                        
+                        <ul>
+                            <li v-for="list in HdRights" :class="list.classname"><span class="VerticalLine"> | &nbsp;</span><a :href="list.url"> <img :src="list.src">{{list.title}}</a>
+                                <div class="VIP-add">
+                                    <h5><b>Get 365 days free shipping by becoming a Soufeel member!</b></h5>
+                                    <span>VIP members enjoy 365 DAYS FREE SHIPPING and exclusive discounts/promotions on all Soufeel jewelry.</span>
+                                    <a href="https://www.soufeel.com/soufeel-vip-membership"> - - > Get started</a>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div> 
+                    
+                </div>
+                <div class="hd-nav-content">
+                    <div class="logo"><img id="logonav" class="logonav" src="./img/0602/nav.png"><a href="https://www.soufeel.com/customer/account/login"><img class="Sign" src="./img/0602/Sign in.png"></a><img class="logoimg" src="./img/0602/logo.png"><a href="https://www.soufeel.com/soufeel-vip-membership"><img class="shopping" src="./img/0602/search.png"></a><img class="search" src="./img/0602/shopping.png"></div>
+                    <ul class="navItem">
+                            <li v-for="item in foots" >
+                                <a :href="item.hrefs"><h4 :class="item.classs">{{item.titles | capitalize}}</h4></a><img src="./img/0602/Arrow.png">
+                               
+                            </li>
+                    </ul>
+                </div>
+                <div class="contents">
+                                <div class="contents-l-txt">
+                                    <h4><b>Soufeel Vip MemberShip</b></h4>
+                                    <span>365 days free shipping by becoming a Soufeel member!</span>
+                                    <span>VIP members enjoy 365 DAYS FREE SHIPPING and exclusive discounts/promotions on all Soufeel jewelry.</span><br>
+                                    <button class="contents-l-txt-btn"> $220.00 / year |join year</button>
+                                    
+                                </div>
+                                <div class="contents-l-txt-img">
+                                        <img src="./img/0602/test/pic-01.jpg">
+                                        <img src="./img/0602/test/pic-02.jpg">
+                                        <img src="./img/0602/test/pic-03.jpg">
+                                        <img src="./img/0602/test/pic-04.jpg">
+                                        <img src="./img/0602/test/pic-05.jpg">
+                                </div>
+                </div>
+            </div>
+        </div>
+        <div class="text container">
+            <div class="row">
+                <div class="c0l-md-1"></div>
+                <div class="c0l-md-10">
+                    <div class="chooseplan">
+                        <h4><b>CHOOSE YOUR PLAN</b></h4>
+                        <div class="chooseplanList">
+                            <div class="txtAdsL">
+                                <h3><b>Engraved Bangles</b></h3>
+                                <span>$220.00 / year  --->join year  </span><br>
+                                <span> and wear it every day as an inspiration</span><br>
+                                <span>365 days free shipping by becoming a Soufeel member!</span>
+                            </div>
+                            <div class="txtAdsR">
+                                <h3><b>Engraved Bangles</b></h3>
+                                <span>Engrave your favorite words, and wear it every day as an inspiration.</span><br>
+                                <span> and wear it every day as an inspiration</span><br>
+                                <span>365 days free shipping by becoming a Soufeel member!</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                   
+                </div>
+                
+                <div class="c0l-md-1"></div>
+            </div>
+            <div class="birthday">
+                <header>YOUR BIRTHDAY : </header><input id="mouth" type="text" placeholder="mouth"><label class="mouths" for="mouth"><img src="./img//0602/Arrow.png"></label><br>
+                <button class="btn btn-lg btns">$29.25/Year | Join Now</button>
+            </div>
+            <div class="questions">
+                <header>WHY SHOP AT SOUFEEL JEWELRY ?</header>
+                <ul>
+                    <li v-for=" item in questions">
+                            <img :src="item.src">
+                            <span class="titles">{{item.title}}</span>
+                       
+                    </li>
+                </ul>
+            </div>
+            <div class="listExamples">
+                <ul>
+                    <li v-for="item in listExample">
+                        <img class="time" src="./img/0602/time.png">
+                        <header>{{item.headers}}  <span class="headersopacity">{{item.headersopacity}}</span></header>
+                        <div class="" v-for="3"><img class="srcstart" :src="item.srcstart"></div>
+                        <span class="name"><b>{{item.name}}</b></span><br>
+                        <span class="ExampleContents">{{item.contents}}</span><br>
+                        <img class="examsrc" :src="item.examsrc">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footcontent" v-for="item in foodlists">
+                <img :src="item.src">
+                <header>{{item.headers}}</header>
+                <span>{{item.desc}}</sapn>
+            </div>
+        </div>
+        <div class="copyright">
+            <span class="copyimg"></span>
+            <span class="copytxt">© Copyright 2009-2018 SOUFEEL Personalized Jewelry</span>
+        </div>
+        <div class="floatAds">
+            <div  class="floatL">
+                <span id="floatLClick">CLICK</span>
+            </div>
+            <div class="floatR">
+                <h1 class="centers"> $5 Off</h1>
+                <h3 class="centers">CASH COUPON</h3>
+                <input type="email" placeholder="Enter Your Email" class="form-control input-lg">
+                <div class="adsCheckboxs centers">
+                    <input  type="checkbox" id="adsCheckbox"><label for="adsCheckbox"> I have read and agreed to the <a href="https://www.soufeel.com/privacy-policy">Privacy Policy</a></label>
+                    <button class="btn btn-lg">GET MY DISCOUNT</button><br>
+                    <span class="pointers">No thanks, I'll just pay full price</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var app=new Vue({
+            el:"#containers",
+            data:{
+                HdList:[
+                    {title:'FREE SHIPPING over',price:'S$88.50' },
+                    {title:'FREE SHIPPING over',price:'S$88.50' },
+                    {title:'FREE SHIPPING over',price:'S$88.50' },
+                    {title:'FREE SHIPPING over',price:'S$88.50' },
+                    {title:'FREE SHIPPING over',price:'S$88.50'},
+                ],
+                likes:5,
+                HdRights:[
+                    { classname:"Vip",title:'Vip MemberShip',url:'https://www.soufeel.com/soufeel-vip-membership'},
+                    {classname:"Contact",title:'Contact us',url:'https://www.soufeel.com/soufeel-vip-membership'},
+                    {classname:"login",title:'login',url:'https://www.soufeel.com/soufeel-vip-membership'},
+                    {classname:"Cart",title:'Cart',url:'https://www.soufeel.com/soufeel-vip-membership', src:'./img/0602/Shopping.png'},
+                ],
+                foots:[
+                    {titles:'Whats New',hrefs:'https://www.soufeel.com/new-arrivals',classs:'txtred'},
+                    {titles:'Necklaces',hrefs:'https://www.soufeel.com/necklaces'},
+                    {titles:'Charms',hrefs:'https://www.soufeel.com/charms'},
+                    {titles:'Personalized',hrefs:'https://www.soufeel.com/personalized-jewelry'},
+                    {titles:'Bracelets',hrefs:'https://www.soufeel.com/new-arrivals'},
+                    {titles:'Whats New',hrefs:'https://www.soufeel.com/new-arrivals'},
+                    {titles:'Necklaces',hrefs:'https://www.soufeel.com/necklaces'},
+                    {titles:'Collections',hrefs:'https://www.soufeel.com/necklaces'},
+                    {titles:'Charms',hrefs:'https://www.soufeel.com/charms'},
+                    {titles:'Gifts',hrefs:'https://www.soufeel.com/charms'},
+                    {titles:'SALE',classs:'red',hrefs:'https://www.soufeel.com/charms'},
+                ],
+                questions:[
+                    {src:'./img/0602/Shopping.png',title:'Variety of perdonalized Jewerly Selections',href:'javascript:'},
+                    {src:'./img/0602/money.png',title:'50% of OFF Jewerly Selections',href:'javascript:'},
+                    {src:'./img/0602/car.png',title:'Worldwide free  Jewerly $S9+',href:'javascript:'},
+                    {src:'./img/0602/data.png',title:'Variety of perdonalized Jewerly Selections',href:'javascript:'},
+                    {src:'./img/0602/back.png',title:'Variety of perdonalized Jewerly Selections',href:'javascript:'},
+                    
+                ],
+                listExample:[
+                    {headers:'Engraved Bangles',srcstart:'./img/0602/start.png',examsrc:'./img/0602/test/soufeel-vip-Surprising.jpg',headersopacity:'Verfied Buyer',name:'Bangles',contents:'SOUFEEL designs, manufactures and markets hand-finished and modern jewelry made from genuine materials at the most really good !!!!',hrefs:'#'},
+                    {headers:'Engraved Bangles',srcstart:'./img/0602/start.png',examsrc:'./img/0602/test/soufeel-vip-Surprising-mobile.jpg',headersopacity:'Verfied Buyer',name:'Bangles',contents:'SOUFEEL designs, manufactures and markets hand-finished and modern jewelry made from genuine materials at the most really good !!!!!!!',hrefs:'#'},
+                    {headers:'Engraved Bangles',srcstart:'./img/0602/start.png',examsrc:'./img/0602/test/soufeel-vip-Service.jpg',headersopacity:'Verfied Buyer',name:'Bangles',contents:'SOUFEEL designs, manufactures and markets hand-finished and modern jewelry made from genuine materials at the most really good !!!!',hrefs:'#'},
+                    {headers:'Engraved Bangles',srcstart:'./img/0602/start.png',examsrc:'./img/0602/test/soufeel-vip-Service-mobile.jpg',headersopacity:'Verfied Buyer',name:'Bangles',contents:'SOUFEEL designs, manufactures and markets hand-finished and modern jewelry made from genuine materials at the most really good !!!!',hrefs:'#'},
+                    {headers:'Engraved Bangles',srcstart:'./img/0602/start.png',examsrc:'./img/0602/test/soufeel-vip-Promotions.jpg',headersopacity:'Verfied Buyer',name:'Bangles',contents:'SOUFEEL designs, manufactures and markets hand-finished and modern jewelry made from genuine materials at the most really good !!!!',hrefs:'#'},
+                    {headers:'Engraved Bangles',srcstart:'./img/0602/start.png',examsrc:'./img/0602/test/soufeel-vip-mebership-mobile.jpg',headersopacity:'Verfied Buyer',name:'Bangles',contents:'SOUFEEL designs, manufactures and markets hand-finished and modern jewelry made from genuine materials at the most really good !!!!',hrefs:'#'},
+                ],
+                foodlists:[
+                    {headers:'FREE SHIPPING',src:'./img/0602/flay.png',desc:'Orders Over 787.06'},
+                    {headers:'FREE SHIPPING',src:'./img/0602/packages.png',desc:'Orders Over 787.06'},
+                    {headers:'FREE SHIPPING',src:'./img/0602/safe.png',desc:'Orders Over 787.06'},
+                    {headers:'FREE SHIPPING',src:'./img/0602/Diamonds.png',desc:'Orders Over 787.06'},
+                    {headers:'FREE SHIPPING',src:'./img/0602/Sincerity.png',desc:'Orders Over 787.06'},
+                ]
+                   
+                
+            },
+            methods:{
+                add:function(){
+                    this.likes++
+                }
+            }
+        });
+        
+        Vue.use(window.VueAwesomeSwiper);
+    </script>
+    
+</body>
+</html> 

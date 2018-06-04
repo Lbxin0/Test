@@ -1,0 +1,43 @@
+.header .hd-img{
+    height:40px
+}
+.hd-nav .hd-nav-content .logo .logonav, .hd-nav .hd-nav-content .logo .Sign, .hd-nav .hd-nav-content .logo .search, .hd-nav .hd-nav-content .logo .shopping{
+    width:20px
+}
+.hd-nav .hd-nav-content .logo .logoimg{
+    width:110px
+}
+.hd-nav .hd-nav-content{
+    padding:0 15px
+}
+.contents .contents-l-txt{
+    margin-left: 20px;
+    width:90%
+}
+.contents-l-txt h4{
+    margin-bottom:-3px;
+    margin-top:0
+}
+.contents .contents-l-txt-img img:nth-child(1){
+    margin-left:17px;
+}
+.contents .contents-l-txt-img img{
+    margin-left:9px;
+    width:50px
+}
+.hd-nav .hd-nav-content ul{
+    top:60px;
+    width:220px
+}
+.hd-nav .hd-nav-content ul li h4{
+    margin:12px 0
+}
+.footer{
+    padding:20px 0
+}
+.footer .footcontent img{
+    width: 20px
+}
+.footer .footcontent header{
+    font-size: 12px
+}

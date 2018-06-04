@@ -1,0 +1,42 @@
+.text .listExamples li{
+    width:45%
+}
+.hd-nav .hd-nav-content ul li{
+    margin-left:30px
+}
+.text .questions ul li{
+    width:140px
+}
+.hd-nav .hd-nav-hd .HdAds{
+    display:none
+}
+.hd-nav .hd-nav-hd .hd-nav-hd-left{
+    margin-left:-20px
+}
+.contents{
+    background:url("../img/0602/test/soufeel-vip-mebership-mobile.jpg");
+    background-size:100%
+}
+.contents .contents-l-txt-img img{
+    top:60px;
+    left:-100px
+}
+.contents .contents-l-txt{
+    margin-left:40px;
+}
+.box .floatAds .floatR h1{
+    margin:0
+}
+.box .floatAds{
+    top:80px
+}
+.box .floatAds .floatR h3{
+    font-size: 0;
+    margin:10px 0;
+}
+.box .floatAds .floatL{
+    font-size: 16px;
+    font-weight:none;
+    top:90px;
+    right:-104px
+}
