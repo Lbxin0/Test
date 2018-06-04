@@ -1,0 +1,156 @@
+.box .floatAds,.inlineblocks{
+    display:none
+}
+.header .hd-img{
+    background:url("../img/0602/test/hengfu-summer-sale-mobile.jpg");
+    background-size:100%;
+    background-repeat:no-repeat
+}
+.hd-nav .hd-nav-content{
+    padding:10px 15px
+}
+.hd-nav .hd-nav-content .logo{
+    position: relative;
+}
+.hd-nav .hd-nav-content .logo .logonav{
+    left:12px;
+    top:18px;
+}
+.hd-nav .hd-nav-content .logo .Sign{
+    left:55px;
+    top:18px;
+    
+}
+.hd-nav .hd-nav-content .logo .search{
+    right:12px;
+    top:18px;
+}
+.hd-nav .hd-nav-content .logo .shopping{
+    right:55px;
+    top:17px;
+    
+}
+.hd-nav .hd-nav-content .logo .logonav,.hd-nav .hd-nav-content .logo .Sign,.hd-nav .hd-nav-content .logo .search,.hd-nav .hd-nav-content .logo .shopping{
+    width:22px;
+    position: absolute;
+    display:block
+}
+.hd-nav .hd-nav-content .logo .logoimg{
+    width:120px
+}
+.hd-nav .hd-nav-content ul{
+    width:260px;
+    border:1px solid rgb(109, 109, 109);
+    position: absolute;
+    top:80px;
+    left:0;
+    background:white;
+    display:none;
+    z-index:2
+
+}
+.hd-nav .hd-nav-content ul li{
+    display: block;
+    margin-left:0;
+    text-align: left;
+    border-bottom:1px solid #b8b8 ;
+    padding-left:20px;
+    position: relative;
+}
+.hd-nav .hd-nav-content ul li h4{
+    font-size:16px;
+    font-weight:bold;
+    margin:15px 0;
+
+}
+.txtred{
+    color:#ff354d
+}
+.hd-nav-content ul li img{
+    display:block;
+    position: absolute;
+    top:-12px;
+    right:15px
+}
+.contents .contents-l-txt{
+    width:80%
+}
+.contents-l-txt h4{
+    margin-top:5px;
+    margin-bottom:6px
+}
+.contents .contents-l-txt .contents-l-txt-btn{
+    width:170px;
+    height:30px;
+    font-size: 12px;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+.contents .contents-l-txt-img img:nth-child(1){
+    margin-left:13px
+}
+.contents .contents-l-txt span{
+    line-height:0
+}
+.contents{
+    margin-bottom:0;
+    background-repeat: no-repeat;
+    padding-top:15px;
+}
+.contents .contents-l-txt-img{
+    margin:0
+}
+.contents .contents-l-txt-img img{
+    width:62px;
+    margin-left:8px;
+    left:0;
+    top:0
+}
+.text .questions{
+    margin-bottom:0
+}
+.text .questions ul li{
+    width:65px
+}
+.text .questions ul li span,.text .questions ul li img{
+    position:static;
+    top:0;
+    left:0
+}
+.text .chooseplan .chooseplanList{
+    display:block
+}
+.text .chooseplan .txtAdsL{
+    margin-bottom:8px
+}
+.text .chooseplan .txtAdsL,.text .chooseplan .txtAdsR{
+    line-height:1.7
+}
+.text .chooseplan .txtAdsL,.text .chooseplan .txtAdsR{
+    width:100%;
+    flex:1;
+    margin-right:0
+}
+.text .chooseplan .txtAdsL h3,.text .chooseplan .txtAdsR h3{
+    margin-top:0;
+    margin-bottom:0;
+    font-size:18px;
+    padding-bottom:10px
+}
+.text .listExamples li{
+    width:90%;
+    margin-left:0
+}
+.text .birthday .btns{
+    padding:5px 40px;
+    font-size: 17px
+}
+.footer .footcontent img{
+    width:25px
+}
+.copyright{
+    padding:0 6px
+}
+.copyright .copytxt{
+    font-size:12px
+}

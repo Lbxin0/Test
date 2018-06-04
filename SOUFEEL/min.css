@@ -1,0 +1,41 @@
+*{
+    padding:0;
+    margin:0
+}
+ul li{
+    list-style: none
+}
+a{
+    color:rgb(121, 121, 121)
+}
+a:hover{
+    text-decoration: none
+}
+ft img,.hd-nav-hd-r.hd-nav-hd-leight ul li,.hd-nav-hd-left span,.hd-nav-hd-left .btnsize,.hd-nav-hd-right .VIP-add,.hd-nav-hd-right ul li img .VerticalLine,.inlineblocks{
+    display:none
+}
+.contents{
+    width:100%;
+    background:url("../img/0602/test/soufeel-vip-mebership.jpg");
+    background-size:100%;
+    background-repeat:no-repeat;
+    padding-top: 40px;
+    margin-bottom:80px;
+}
+
+.hd-nav-content ul{
+    display:none;
+    color:red;
+    border: 1px solid #ccc;
+    width:260px;
+    top:97px
+}
+.hd-nav-content ul li{
+    display: block;
+    border-bottom:2px solid #bbb;
+    padding-left:10px
+}
+.hd-nav-content ul li h4{
+    margin:20px 0;
+    color:#333
+}
